@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Properties</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Manage Properties</h1>
+        <table id="propertiesTable">
+            <thead>
+                <tr>
+                    <th>Property Name</th>
+                    <th>Location</th>
+                    <th>Type</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hostel in Gulshan</td>
+                    <td>Gulshan</td>
+                    <td>Hostel</td>
+                    <td>5000</td>
+                    <td>
+                        <button onclick="editProperty()">Edit</button>
+                        <button onclick="deleteProperty(this)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="manage_properties.js"></script>
+</body>
+</html>
